@@ -249,5 +249,3 @@ def touch_in(tube_station, time):
     tube['time'] = time
 
     return tube
-
-print(touch_in('Aldgate East', '2022/01/30 17:12'))
