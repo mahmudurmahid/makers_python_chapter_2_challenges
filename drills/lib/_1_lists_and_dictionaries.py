@@ -23,8 +23,8 @@
 #   Call:    first_element([1, 2, 3])
 #   Returns: 1
 
-def first_element(element):
-    return element[0]
+def first_element(list):
+    return list[0]
 
 # Method name: second_element
 # Purpose: returns the second element of the given list
@@ -33,8 +33,8 @@ def first_element(element):
 #   Call:    second_element([1, 2, 3])
 #   Returns: 2
 
-def second_element(element):
-    return element[1]
+def second_element(list):
+    return list[1]
 
 # Method name: last_element
 # Purpose: returns the last element of the given list
@@ -43,8 +43,8 @@ def second_element(element):
 #   Call:    last_element([1, 2, 3])
 #   Returns: 3
 
-def last_element(element):
-    return element[-1]
+def last_element(list):
+    return list[-1]
 
 # Method name: first_two_elements
 # Purpose: returns the first two elements of the given list
@@ -53,8 +53,8 @@ def last_element(element):
 #   Call:    first_two_elements([1, 2, 3])
 #   Returns: [1, 2]
 
-def first_two_elements(element):
-    return element[0:2]
+def first_two_elements(list):
+    return list[0:2]
 
 # Method name: first_three_elements
 # Purpose: returns the first three elements of the given list
