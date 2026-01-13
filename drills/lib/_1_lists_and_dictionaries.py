@@ -149,10 +149,7 @@ def remove_nones_from_list(list):
 #   Returns: [1, 2, 3, 1, 2, 3]
 
 def double_list(list):
-    for element in list:
-        list.append(element)
-    
-    return list
+    return list + list
 
 # Method name: unique_elements
 # Purpose: returns a list with all the unique elements of the given list
@@ -218,4 +215,3 @@ def double_list(list):
 # Example:
 #   Call:    touch_in('Aldgate East', '2022/01/30 17:12')
 #   Returns: {'entrypoint': 'Aldgate East', 'time': '2022/01/30 17:12'}
-
