@@ -247,5 +247,15 @@ class Apprentice():
 #   > cohort.calculate_duration()
 #   92
 
+from datetime import datetime, date
 
+class Cohort():
+    def __init__(self, name, start_date, end_date):
+        self.name = name
+        self.start_date = datetime.strptime(start_date, "%Y-%m-%d").date()
+        self.end_date = datetime.strptime(end_date, "%Y-%m-%d").date()
 
+    def calculate_duration(self):
+        difference = self.end_date - self.start_date
+
+        return difference.days
