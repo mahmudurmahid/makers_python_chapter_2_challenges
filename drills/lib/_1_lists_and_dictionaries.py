@@ -174,7 +174,12 @@ def unique_elements(list):
 #   Call:    add_to_list(["a", "b", "c"], "d")
 #   Returns: ["a", "b", "c", "d"]
 
+def add_to_list(list, element):
+    list.append(element)
 
+    return list
+
+print(add_to_list(["a", "b", "c"], "d"))
 
 # == DICTIONARY EXERCISES ==
 
