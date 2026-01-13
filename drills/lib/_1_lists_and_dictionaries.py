@@ -189,7 +189,18 @@ def add_to_list(list, element):
 #   Call:    new_band_member({"bass": "flea"})
 #   Returns: {"vocalist": "miss piggy", "lead_guitar": "scooter", "bass": "flea"}
 
+def new_band_member(dict):
+    band = {"vocalist": "miss piggy", "lead_guitar": "scooter"}
+    
+    for key, value in dict.items():
+        new_key = key
+        new_value = value
 
+    band[new_key] = new_value
+
+    return band
+
+# print(new_band_member({"bass": "flea"}))
 
 # Method name: all_values
 # Purpose: returns a list of all the values in the given dictionary
