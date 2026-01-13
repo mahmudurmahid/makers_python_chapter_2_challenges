@@ -23,7 +23,8 @@
 #   Call:    first_element([1, 2, 3])
 #   Returns: 1
 
-
+def first_element(element):
+    return element[0]
 
 # Method name: second_element
 # Purpose: returns the second element of the given list
