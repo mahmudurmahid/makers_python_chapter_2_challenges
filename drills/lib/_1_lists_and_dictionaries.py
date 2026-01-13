@@ -158,7 +158,14 @@ def double_list(list):
 #   Call:    unique_elements([1, 2, 1, 3, 2, 3])
 #   Returns: [1, 2, 3]
 
+def unique_elements(list):
+    unique_list = []
 
+    for number in list:
+        if number not in unique_list:
+            unique_list.append(number)
+    
+    return unique_list
 
 # Method name: add_to_list
 # Purpose: adds the given element to the given list
