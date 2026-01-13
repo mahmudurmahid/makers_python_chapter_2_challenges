@@ -123,7 +123,13 @@ def i_joined_the_beatles(name):
 #   Call:    we_joined_the_beatles(['yoko', 'stuart'])
 #   Returns: ['john', 'paul', 'george', 'ringo', 'yoko', 'stuart']
 
+def we_joined_the_beatles(names):
+    beatles = ['john', 'paul', 'george', 'ringo']
 
+    for name in names:
+        beatles.append(name)
+
+    return beatles
 
 # Method name: remove_nones_from_list
 # Purpose: removes all the None values from the given list
