@@ -138,7 +138,14 @@ def we_joined_the_beatles(names):
 #   Call:    remove_nones_from_list([1, None, 2, None, 3])
 #   Returns: [1, 2, 3]
 
+def remove_nones_from_list(list):
+    for value in list:
+        if value == None:
+            list.remove(value)
+    
+    return list
 
+print(remove_nones_from_list([1, None, 2, None, 3]))
 
 # Method name: double_list
 # Purpose: returns a list with all the elements of the given list repeated twice
