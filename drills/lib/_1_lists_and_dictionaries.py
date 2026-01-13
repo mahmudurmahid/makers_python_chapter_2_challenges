@@ -63,7 +63,8 @@ def first_two_elements(element):
 #   Call:    first_three_elements([1, 2, 3, 4])
 #   Returns: [1, 2, 3]
 
-
+def first_three_elements(list):
+    return list[0:3]
 
 # Method name: total
 # Purpose: returns the sum of all the elements in the given list
