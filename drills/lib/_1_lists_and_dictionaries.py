@@ -200,8 +200,6 @@ def new_band_member(dict):
 
     return band
 
-# print(new_band_member({"bass": "flea"}))
-
 # Method name: all_values
 # Purpose: returns a list of all the values in the given dictionary
 # Arguments: one dictionary
