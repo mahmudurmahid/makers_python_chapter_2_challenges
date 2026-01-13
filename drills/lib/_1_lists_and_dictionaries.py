@@ -113,7 +113,8 @@ def the_beatles():
 #   Call:    i_joined_the_beatles('yoko')
 #   Returns: ['john', 'paul', 'george', 'ringo', 'yoko']
 
-
+def i_joined_the_beatles(name):
+    return ['john', 'paul', 'george', 'ringo', name]
 
 # Method name: we_joined_the_beatles
 # Purpose: adds the given names to the list ['john', 'paul', 'george', 'ringo']
