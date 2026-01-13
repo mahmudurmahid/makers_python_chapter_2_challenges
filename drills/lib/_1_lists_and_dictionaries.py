@@ -93,7 +93,8 @@ def lowest_number(list):
 #   Call:    highest_number([4, 6, 2])
 #   Returns: 6
 
-
+def highest_number(list):
+    return sorted(list, reverse=True)[0]
 
 # Method name: the_beatles
 # Purpose: returns the list ['john', 'paul', 'george', 'ringo']
