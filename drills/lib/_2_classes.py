@@ -208,7 +208,13 @@ class Calculator():
 #   > apprentice.format_details()
 #   'Rita Smith, June 2030'
 
-
+class Apprentice():
+    def __init__(self, name, cohort):
+        self.name = name
+        self.cohort = cohort
+    
+    def format_details(self):
+        return f'{self.name}, {self.cohort}'
 
 # Class name: Cohort
 # Purpose: represents a cohort
