@@ -83,7 +83,8 @@ def total(list):
 #   Call:    lowest_number([4, 2, 6])
 #   Returns: 2
 
-
+def lowest_number(list):
+    return sorted(list)[0]
 
 # Method name: highest_number
 # Purpose: returns the highest number in the given list
