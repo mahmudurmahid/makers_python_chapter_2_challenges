@@ -241,3 +241,13 @@ def remove_nones_from_dictionary(dict):
 # Example:
 #   Call:    touch_in('Aldgate East', '2022/01/30 17:12')
 #   Returns: {'entrypoint': 'Aldgate East', 'time': '2022/01/30 17:12'}
+
+def touch_in(tube_station, time):
+    tube = {"entrypoint" : None, "time" : None}
+
+    tube['entrypoint'] = tube_station
+    tube['time'] = time
+
+    return tube
+
+print(touch_in('Aldgate East', '2022/01/30 17:12'))
