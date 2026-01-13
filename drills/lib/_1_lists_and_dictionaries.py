@@ -217,7 +217,8 @@ def all_values(dict):
 #   Call:    all_keys({"a": 1, "b": 2, "c": 3})
 #   Returns: ["a", "b", "c"]
 
-
+def all_keys(dict):
+    return dict.keys()
 
 # Method name: remove_nones_from_dictionary
 # Purpose: removes all pairs from a given dictionary where the value is None
