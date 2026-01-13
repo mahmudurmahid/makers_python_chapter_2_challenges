@@ -148,7 +148,11 @@ def remove_nones_from_list(list):
 #   Call:    double_list([1, 2, 3])
 #   Returns: [1, 2, 3, 1, 2, 3]
 
-
+def double_list(list):
+    for element in list:
+        list.append(element)
+    
+    return list
 
 # Method name: unique_elements
 # Purpose: returns a list with all the unique elements of the given list
