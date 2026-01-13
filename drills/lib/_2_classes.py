@@ -168,7 +168,21 @@ class StringFormatter():
 #   > calculator.divide(6, 2)
 #   3.0
 
+class Calculator():
+    def __init__(self):
+        pass
 
+    def add(self, x, y):
+        return x + y
+    
+    def multiply(self, x, y):
+        return x * y
+    
+    def subtract(self, x, y):
+        return x - y
+    
+    def divide(self, x, y):
+        return x / y
 
 # Class name: Apprentice
 # Purpose: represents an apprentice
