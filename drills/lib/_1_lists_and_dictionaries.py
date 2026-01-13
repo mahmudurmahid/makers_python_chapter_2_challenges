@@ -179,8 +179,6 @@ def add_to_list(list, element):
 
     return list
 
-print(add_to_list(["a", "b", "c"], "d"))
-
 # == DICTIONARY EXERCISES ==
 
 # Method name: new_band_member
