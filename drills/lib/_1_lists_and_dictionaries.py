@@ -33,7 +33,8 @@ def first_element(element):
 #   Call:    second_element([1, 2, 3])
 #   Returns: 2
 
-
+def second_element(element):
+    return element[1]
 
 # Method name: last_element
 # Purpose: returns the last element of the given list
