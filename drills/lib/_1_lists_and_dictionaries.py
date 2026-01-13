@@ -103,7 +103,8 @@ def highest_number(list):
 #   Call:    the_beatles()
 #   Returns: ['john', 'paul', 'george', 'ringo']
 
-
+def the_beatles():
+    return ['john', 'paul', 'george', 'ringo']
 
 # Method name: i_joined_the_beatles
 # Purpose: adds the given name to the list ['john', 'paul', 'george', 'ringo']
