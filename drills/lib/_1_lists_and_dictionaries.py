@@ -227,8 +227,13 @@ def all_keys(dict):
 #   Call:    remove_nones_from_dictionary({"a": 1, "b": None, "c": 3})
 #   Returns: {"a": 1, "c": 3}
 
-
-
+def remove_nones_from_dictionary(dict):
+    new_dict = {}
+    for key, value in dict.items():
+        if value != None:
+            new_dict[key] = value
+    
+    return new_dict
 
 # Method name: touch_in
 # Purpose: creates a dictionary from a given tube station and time
