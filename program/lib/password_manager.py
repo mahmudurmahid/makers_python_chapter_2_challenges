@@ -43,4 +43,33 @@
 # == YOUR CODE ==
 
 class PasswordManager():
-    pass
+    def __init__(self):
+        self.passwords = {}
+
+    def add(self, service, password):
+        if len(password) <= 7:
+            password = None
+        elif "!" in password or "@" in password or "$" in password or "%" in password or "&" in password:
+            self.passwords[service] = password
+        else:
+            password = None
+    
+    def get_for_service(self, service):
+            return self.passwords.get(service)
+
+    def list_services(self):
+        return self.passwords.keys()
+
+
+password_manager = PasswordManager()
+password_manager.add('gmail', '12ab5!678')   # Valid password
+password_manager.add('facebook', '$abc1234') # Valid password
+password_manager.add('twitter', '12345678')  # Invalid password, so ignored
+print(password_manager.get_for_service('facebook'))
+# '$abc1234'
+print(password_manager.get_for_service('not_real'))
+# None
+print(password_manager.get_for_service('twitter'))
+# None
+print(password_manager.list_services())
+# ['gmail', 'facebook']
